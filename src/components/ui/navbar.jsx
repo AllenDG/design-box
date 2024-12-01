@@ -22,7 +22,7 @@ const Navbar = () => {
           </a>
         </div>
         {/* Navbar List for Desktop */}
-        <div className="hidden flex-1 justify-center md:flex mr-40">
+        <div className="hidden flex-1 justify-center md:flex mr-12">
           <NavbarList />
         </div>
         {/* Dark Mode Toggle for Desktop and Drawer for Mobile */}

@@ -3,18 +3,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom dark mode styles */
+/* Custom body styles for light mode */
 body {
-  background-color: #f8f6f4; /* Light background */
+  background-color: #fffff; /* Light background */
   color: #41444b; /* Dark text */
+  font-family: "Inter", sans-serif; /* Add your preferred font */
+}
+
+/* Custom styles for light and dark mode */
+.text-secondary-800 {
+  color: #41444b; /* Default secondary color for light mode */
+}
+
+.text-secondary-200 {
+  color: #a0aec0; /* Lighter secondary color */
 }
 
 /* Dark Mode: Specific styles when the 'dark' class is added */
 .dark body {
-  background-color: #1a202c; /* Dark background */
+  background-color: #181C14; /* Dark background */
   color: #f8f6f4; /* Light text */
 }
 
+/* Specific adjustments for text colors in dark mode */
 .dark .text-secondary-800 {
   color: #e2e8f0; /* Light color in dark mode */
 }
@@ -23,4 +34,41 @@ body {
   color: #e2e8f0; /* Light color in dark mode */
 }
 
-/* You can add other custom dark mode styles here */
+/* Dark Mode specific button styles */
+.dark .bg-secondary-800 {
+  background-color: #2d3748; /* Dark background for secondary buttons */
+}
+
+.dark .bg-secondary-600 {
+  background-color: #4a5568; /* Dark background for hover state */
+}
+
+.dark .bg-primary-400 {
+  background-color: #3182ce; /* Light primary button background */
+}
+
+.dark .bg-primary-300 {
+  background-color: #4299e1; /* Lighter primary hover state */
+}
+
+/* Additional dark mode styling */
+.dark .border-secondary-600 {
+  border-color: #4a5568; /* Dark border */
+}
+
+.dark .hover\:bg-secondary-500:hover {
+  background-color: #4a5568; /* Dark hover state */
+}
+
+.dark .hover\:text-primary-400:hover {
+  color: #63b3ed; /* Light hover text color */
+}
+
+/* Transition enhancements for smooth mode change */
+.transition-colors {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Custom font sizes or utility classes can be added here as well */

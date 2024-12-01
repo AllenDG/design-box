@@ -11,9 +11,13 @@ const DarkModeToggle = () => {
       setIsDarkMode(savedTheme === "dark");
       document.documentElement.classList.add(savedTheme); // Apply saved theme
     } else {
-      const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const userPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
       setIsDarkMode(userPrefersDark);
-      document.documentElement.classList.add(userPrefersDark ? "dark" : "light");
+      document.documentElement.classList.add(
+        userPrefersDark ? "dark" : "light",
+      );
     }
   }, []);
 
@@ -26,9 +30,12 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode} className="text-secondary-800 dark:text-secondary-200">
+    <button
+      onClick={toggleDarkMode}
+      className="text-secondary-800 dark:text-secondary-200"
+    >
       {isDarkMode ? (
-        <FaSun className="text-xl" /> // Sun icon when dark mode is active
+        <FaSun className="text-xl text-white" /> // Sun icon with white color when dark mode is active
       ) : (
         <FaMoon className="text-xl" /> // Moon icon when light mode is active
       )}

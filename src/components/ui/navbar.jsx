@@ -11,96 +11,115 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="bg-primary-100 text-secondary-800 dark:border-secondary-600 dark:bg-secondary-500 dark:text-primary-100 border-b">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-3 lg:px-8">
-        {" "}
-        {/* Adjust width using max-w-7xl */}
         {/* Logo */}
-        <div className="text-secondary-800 dark:text-secondary-200 text-2xl font-extrabold tracking-wide">
-          <a href="/" className="transition duration-300">
-            Design Box
-          </a>
+        <div className="text-xl font-bold">
+          <Link
+            to="/"
+            className="hover:text-secondary-500 dark:hover:text-primary-400 transition duration-300"
+          >
+            DesignBox
+          </Link>
         </div>
-        {/* Navbar List for Desktop */}
-        <div className="hidden flex-1 justify-center md:flex mr-12">
+
+        {/* Desktop Navbar List */}
+        <div className="hidden space-x-6 md:flex">
           <NavbarList />
         </div>
-        {/* Dark Mode Toggle for Desktop and Drawer for Mobile */}
-        <div className="flex items-center space-x-4 md:space-x-6">
-          {/* Dark Mode Toggle for Desktop */}
-          <div className="hidden md:block">
-            <DarkModeToggle />
-          </div>
 
-          {/* Drawer Menu Button (Mobile) */}
-          <div className="relative z-50 md:hidden">
-            <button
-              className="hover:text-secondary-800 text-secondary-800 transition focus:outline-none"
-              onClick={toggleDrawer}
-            >
-              {/* Render Hamburger or X Icon based on drawer state */}
-              {isDrawerOpen ? "✖" : "☰"}
-            </button>
-          </div>
+        {/* Right Section */}
+        <div className="flex items-center space-x-4">
+          {/* Dark Mode Toggle */}
+          <DarkModeToggle />
+
+          {/* Login and Signup Buttons */}
+          <Link
+            to="/login"
+            className="text-sm font-medium transition duration-300"
+          >
+            Login
+          </Link>
+          <Link
+            to="/signup"
+            className="border-secondary-800 dark:border-primary-100 hover:bg-secondary-600 dark:hover:bg-primary-300 rounded-lg border px-4 py-2 text-sm font-medium transition duration-300"
+          >
+            Signup
+          </Link>
+
+          {/* Mobile Drawer Toggle */}
+          <button
+            className="text-secondary-800 dark:text-primary-100 block focus:outline-none md:hidden"
+            onClick={toggleDrawer}
+          >
+            {isDrawerOpen ? (
+              <span className="text-2xl">✖</span>
+            ) : (
+              <span className="text-2xl">☰</span>
+            )}
+          </button>
         </div>
       </div>
 
-      {/* Drawer (Mobile) */}
+      {/* Mobile Drawer */}
       {isDrawerOpen && (
-        <div className="fixed inset-0 z-40 flex">
-          {/* Drawer panel on the right with slide-in animation */}
-          <div className="bg-primary-600 z-40 h-full w-full max-w-xs translate-x-full transform shadow-lg transition-transform duration-300 ease-in-out md:translate-x-0">
-            <ul className="text-secondary-800 space-y-4 p-6 text-center">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:bg-secondary-200 block rounded-lg px-4 py-2 text-lg font-medium transition"
-                  onClick={toggleDrawer} // Close drawer on link click
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/showcase-page"
-                  className="hover:bg-secondary-200 block rounded-lg px-4 py-2 text-lg font-medium transition"
-                  onClick={toggleDrawer} // Close drawer on link click
-                >
-                  Showcase
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services-page"
-                  className="hover:bg-secondary-200 block rounded-lg px-4 py-2 text-lg font-medium transition"
-                  onClick={toggleDrawer} // Close drawer on link click
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact-page"
-                  className="hover:bg-secondary-200 block rounded-lg px-4 py-2 text-lg font-medium transition"
-                  onClick={toggleDrawer} // Close drawer on link click
-                >
-                  Contact
-                </Link>
-              </li>
-              {/* Dark Mode Toggle inside Drawer for Mobile */}
-              <li>
-                <div className="py-4">
-                  <DarkModeToggle />
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Overlay */}
-          <div
-            className="h-full w-full bg-black bg-opacity-50"
-            onClick={toggleDrawer} // Close drawer when clicking on the overlay
-          ></div>
+        <div className="bg-primary-100 dark:bg-secondary-600 absolute left-0 top-16 w-full shadow-md">
+          <ul className="flex flex-col space-y-4 px-6 py-4">
+            <li>
+              <Link
+                to="/"
+                className="hover:bg-primary-300 dark:hover:bg-secondary-500 block rounded-lg px-4 py-2 text-lg font-medium transition duration-300"
+                onClick={toggleDrawer}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/showcase-page"
+                className="hover:bg-primary-300 dark:hover:bg-secondary-500 block rounded-lg px-4 py-2 text-lg font-medium transition duration-300"
+                onClick={toggleDrawer}
+              >
+                Showcase
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services-page"
+                className="hover:bg-primary-300 dark:hover:bg-secondary-500 block rounded-lg px-4 py-2 text-lg font-medium transition duration-300"
+                onClick={toggleDrawer}
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact-page"
+                className="hover:bg-primary-300 dark:hover:bg-secondary-500 block rounded-lg px-4 py-2 text-lg font-medium transition duration-300"
+                onClick={toggleDrawer}
+              >
+                Contact
+              </Link>
+            </li>
+            {/* Mobile Login and Signup Links */}
+            <li>
+              <Link
+                to="/login"
+                className="text-secondary-800 hover:bg-primary-300 dark:hover:bg-secondary-500 block px-4 py-2 text-lg font-medium transition duration-300"
+                onClick={toggleDrawer}
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/signup"
+                className="bg-secondary-800 hover:bg-secondary-600 dark:bg-primary-400 dark:hover:bg-primary-300 rounded-lg px-4 py-2 text-sm font-medium text-white transition duration-300 dark:text-black"
+              >
+                Signup
+              </Link>
+            </li>
+          </ul>
         </div>
       )}
     </nav>

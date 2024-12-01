@@ -6,35 +6,34 @@ import ServicesPage from "@/pages/ServicesPage";
 import ContactPage from "@/pages/ContactPage";
 import { createBrowserRouter } from "react-router-dom";
 
-export const  MainRoutes  = createBrowserRouter([
-    {
-        path: "*",
-        element: <PageNotFound/>,
-    },
-    {
-        path: "/",
-        element: <HomeLayout/>,
-        children: [
-            {
-                path: "",
-                element: <LandingPage/>,
-            },
+export const MainRoutes = createBrowserRouter([
+  {
+    path: "*",
+    element: <PageNotFound />,
+  },
+  {
+    path: "/",
+    element: <HomeLayout />,
+    children: [
+      {
+        path: "",
+        element: <LandingPage />,
+      },
 
-            {
-                path: "showcase-page",
-                element: <ShowcasePage/>,
-            },
+      {
+        path: "showcase-page",
+        element: <ShowcasePage />,
+      },
 
-            {
-                path: "services-page",
-                element: <ServicesPage/>,
-            },
+      {
+        path: "services-page",
+        element: <ServicesPage />,
+      },
 
-            {
-                path: "contact-page",
-                element: <ContactPage/>,
-            },
-
-        ],
-    },
+      {
+        path: "contact-page",
+        element: <ContactPage />,
+      },
+    ],
+  },
 ]);

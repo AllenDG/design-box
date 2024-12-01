@@ -1,6 +1,6 @@
 export const navBarRoutes= ([
     {
-        path: "",
+        path: "/",
         label:"Home"
     },
     {

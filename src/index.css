@@ -1,3 +1,26 @@
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom dark mode styles */
+body {
+  background-color: #f8f6f4; /* Light background */
+  color: #41444b; /* Dark text */
+}
+
+/* Dark Mode: Specific styles when the 'dark' class is added */
+.dark body {
+  background-color: #1a202c; /* Dark background */
+  color: #f8f6f4; /* Light text */
+}
+
+.dark .text-secondary-800 {
+  color: #e2e8f0; /* Light color in dark mode */
+}
+
+.dark .text-secondary-200 {
+  color: #e2e8f0; /* Light color in dark mode */
+}
+
+/* You can add other custom dark mode styles here */

@@ -9,14 +9,6 @@ export default function Buttons() {
       >
         Learn More
       </button>
-
-      {/* Portfolio Button */}
-      <button
-        className="rounded-lg bg-secondary-300 px-6 py-2 text-lg font-semibold text-white transition duration-300 hover:bg-gray-900"
-        onClick={() => (window.location.href = "#portfolio")}
-      >
-        Portfolio
-      </button>
     </div>
   );
 }

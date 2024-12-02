@@ -5,70 +5,88 @@
 
 /* Custom body styles for light mode */
 body {
-  background-color: #fffff; /* Light background */
-  color: #41444b; /* Dark text */
-  font-family: "Inter", sans-serif; /* Add your preferred font */
+  background-color: #ffffff; /* Light mode background */
+  color: #41444b; /* Dark text for contrast */
+  font-family: "Inter", sans-serif; /* Clean font for readability */
 }
 
-/* Custom styles for light and dark mode */
+/* Custom styles for light mode */
 .text-secondary-800 {
-  color: #41444b; /* Default secondary color for light mode */
+  color: #41444b; /* Dark secondary text */
 }
 
 .text-secondary-200 {
-  color: #a0aec0; /* Lighter secondary color */
+  color: #a0aec0; /* Muted light text */
 }
 
-/* Dark Mode: Specific styles when the 'dark' class is added */
+/* Dark Mode Styling */
 .dark body {
-  background-color: #181C14; /* Dark background */
-  color: #f8f6f4; /* Light text */
+  background-color: #181c14; /* Dark background for contrast */
+  color: #f8f6f4; /* Light text for readability */
 }
 
-/* Specific adjustments for text colors in dark mode */
 .dark .text-secondary-800 {
-  color: #e2e8f0; /* Light color in dark mode */
+  color: #e2e8f0; /* Light text in dark mode */
 }
 
 .dark .text-secondary-200 {
-  color: #e2e8f0; /* Light color in dark mode */
+  color: #e2e8f0; /* Adjusted muted text for dark mode */
 }
 
-/* Dark Mode specific button styles */
+/* Button and UI Element Adjustments */
 .dark .bg-secondary-800 {
-  background-color: #2d3748; /* Dark background for secondary buttons */
+  background-color: #2d3748; /* Background for buttons in dark mode */
 }
 
 .dark .bg-secondary-600 {
-  background-color: #4a5568; /* Dark background for hover state */
+  background-color: #4a5568; /* Hover state */
 }
 
 .dark .bg-primary-400 {
-  background-color: #3182ce; /* Light primary button background */
+  background-color: #3182ce; /* Primary button background */
 }
 
 .dark .bg-primary-300 {
-  background-color: #4299e1; /* Lighter primary hover state */
+  background-color: #4299e1; /* Primary hover state */
 }
 
-/* Additional dark mode styling */
 .dark .border-secondary-600 {
-  border-color: #4a5568; /* Dark border */
+  border-color: #4a5568; /* Dark mode border */
 }
 
 .dark .hover\:bg-secondary-500:hover {
-  background-color: #4a5568; /* Dark hover state */
+  background-color: #4a5568; /* Hover for dark mode */
 }
 
 .dark .hover\:text-primary-400:hover {
   color: #63b3ed; /* Light hover text color */
 }
 
-/* Transition enhancements for smooth mode change */
+/* Smooth Transitions for Light/Dark Mode */
 .transition-colors {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
 }
 
-/* Custom font sizes or utility classes can be added here as well */
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Marquee Animation Class */
+.animate-marquee {
+  animation: marquee 30s linear infinite; /* Slower scrolling (25 seconds) */
+  animation-fill-mode: forwards; /* Retain position when paused */
+  
+}
+
+/* Pause the animation on hover, resume without resetting when mouse leaves */
+.animate-marquee:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}

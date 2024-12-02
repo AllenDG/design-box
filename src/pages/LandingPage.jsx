@@ -1,6 +1,7 @@
 // LandingPage.jsx
 import About from "@/components/ui/landing/About";
 import Hero from "@/components/ui/landing/Hero"; // Import the Hero component
+import Offer from "@/components/ui/landing/Offer";
 import TechStack from "@/components/ui/landing/TechStack";
 
 export default function LandingPage() {
@@ -11,7 +12,8 @@ export default function LandingPage() {
         <Hero />
 
         <TechStack />
-        <About/>
+        <About />
+        <Offer />
       </div>
     </main>
   );

@@ -81,12 +81,18 @@ body {
 
 /* Marquee Animation Class */
 .animate-marquee {
-  animation: marquee 30s linear infinite; /* Slower scrolling (25 seconds) */
-  animation-fill-mode: forwards; /* Retain position when paused */
-  
+  display: flex; /* Ensure items are in a single row */
+  width: max-content; /* Stretch to fit all content */
+  animation: marquee 20s linear infinite; /* Faster scrolling for quicker restart */
 }
 
-/* Pause the animation on hover, resume without resetting when mouse leaves */
+/* Optional: Pause the animation on hover */
 .animate-marquee:hover {
   animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* Adjust for responsiveness */
+.overflow-hidden {
+  overflow: hidden; /* Hide content outside the container */
+  position: relative; /* Maintain positioning */
 }

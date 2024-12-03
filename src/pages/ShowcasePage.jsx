@@ -8,6 +8,7 @@ const ShowcasePage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Category Buttons */}
       <div className="mb-8 flex justify-center gap-4">
         <button
           className={`rounded-md px-6 py-2 text-sm font-light ${
@@ -41,7 +42,7 @@ const ShowcasePage = () => {
         </button>
       </div>
 
-      {/* Display Projects Based on Category */}
+      {/* Render Based on Selected Category */}
       {selectedCategory === "graphicDesign" && <GraphicDesign />}
       {selectedCategory === "videoEditing" && <VideoEditing />}
       {selectedCategory === "web" && <WebDevelopment />}

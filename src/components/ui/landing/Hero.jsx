@@ -1,4 +1,3 @@
-// Hero.jsx
 import Typewriter from "typewriter-effect";
 import Buttons from "@/components/ui/landing/Buttons"; // Import the Buttons component
 
@@ -29,12 +28,12 @@ export default function Hero() {
         <Buttons />
       </div>
 
-      {/* Right Section with Image */}
-      <div className="w-full max-w-md">
+      {/* Right Section with Resized Image */}
+      <div className="w-full max-w-lg">
         <img
-          src="https://via.placeholder.com/400" // Replace with your actual image URL
+          src="https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Screenshot_20241203-121607.jpg?alt=media&token=675f0c84-a56d-495b-8691-303f280e431d" // Replace with your actual image URL
           alt="Freelance Visual"
-          className="h-auto w-full rounded-lg object-cover shadow-lg"
+          className="h-50 w-full rounded-lg object-cover shadow-lg" // Resized image with fixed height
         />
       </div>
     </section>

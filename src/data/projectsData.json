@@ -1,0 +1,41 @@
+{
+  "graphicDesign": [
+    { "title": "Logo Design", "imageUrl": "https://via.placeholder.com/400" },
+    { "title": "Poster Design", "imageUrl": "https://via.placeholder.com/400" },
+    { "title": "Branding", "imageUrl": "https://via.placeholder.com/400" },
+    { "title": "Web Design", "imageUrl": "https://via.placeholder.com/400" },
+    { "title": "Flyer Design", "imageUrl": "https://via.placeholder.com/400" },
+    { "title": "Business Card", "imageUrl": "https://via.placeholder.com/400" }
+  ],
+  "videoEditing": [
+    {
+      "title": "Corporate Video",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "title": "Vlog Editing",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "title": "Tutorial Video",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+  ],
+  "web": [
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website",
+      "imageUrl": "https://via.placeholder.com/400"
+    },
+    {
+      "title": "E-commerce Site",
+      "description": "A full-featured online store",
+      "imageUrl": "https://via.placeholder.com/400"
+    },
+    {
+      "title": "Blog Website",
+      "description": "A simple blog layout",
+      "imageUrl": "https://via.placeholder.com/400"
+    }
+  ]
+}

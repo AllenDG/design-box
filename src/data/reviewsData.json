@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "review": "The service was exceptional! Highly recommended.",
+    "rating": 5,
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Jane Smith",
+    "review": "Great quality and timely delivery. Will use again!",
+    "rating": 4.5,
+    "avatar": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Michael Johnson",
+    "review": "Very professional and exceeded my expectations.",
+    "rating": 5,
+    "avatar": "https://via.placeholder.com/100"
+  }
+]

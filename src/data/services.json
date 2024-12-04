@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "category": "Graphic Design",
+      "items": [
+        "Brochure",
+        "Infographics",
+        "Flyer",
+        "Calendar",
+        "Resume/CV",
+        "Business Card",
+        "Menu Design",
+        "Logo"
+      ]
+    },
+    {
+      "category": "Video Editing",
+      "items": ["Short Film", "Commercial", "Montage", "Vlog"]
+    },
+    {
+      "category": "Web Development",
+      "items": ["UI / UX", "Web Development (UI)", "Portfolio"]
+    }
+  ]
+}

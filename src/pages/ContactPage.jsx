@@ -1,7 +1,13 @@
+import ContactUs from "@/components/ui/contact/ContactUs";
+import GetInTouch from "@/components/ui/contact/GetInTouch";
+
 export default function ContactPage() {
   return (
-    <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-3 lg:px-8">
-      ContactPage
+    <div className="container mx-auto max-w-7xl px-4 py-8">
+      
+
+      <GetInTouch />
+      <ContactUs />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { navBarRoutes } from "@/routes/navbarRoutes";
 import { useLocation } from "react-router-dom";
 
-const navbarList = () => {
+const NavbarList = () => {
   const location = useLocation();
 
   return (
@@ -26,4 +26,4 @@ const navbarList = () => {
   );
 };
 
-export default navbarList;
+export default NavbarList;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import NavbarList from "@/components/ui/NavbarList";
+import NavbarList from "@/components/ui/navbarList";
 import DarkModeToggle from "@/components/DarkmodeToggle";
 
 const Navbar = () => {

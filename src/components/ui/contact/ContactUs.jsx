@@ -44,7 +44,7 @@ const ContactUs = () => {
             href="https://www.tiktok.com/@pcommissioner_"
             className="inline-flex items-center text-blue-600 hover:underline"
           >
-            <FaTiktok className="mr-2" /> @pcommissioner_
+            <FaTiktok className="mr-2" /> @pickaro_
           </a>
         </div>
       </div>

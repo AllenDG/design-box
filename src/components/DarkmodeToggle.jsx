@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa"; // Import moon and sun icons
 
-const DarkmodeToggle = () => {
+const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Check local storage for saved theme preference
@@ -43,4 +43,4 @@ const DarkmodeToggle = () => {
   );
 };
 
-export default DarkmodeToggle;
+export default DarkModeToggle;

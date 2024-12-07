@@ -1,4 +1,4 @@
-export const navBarRoutes= [
+export const navBarRoutes= ([
     {
         path: "/",
         label:"Home"
@@ -15,4 +15,4 @@ export const navBarRoutes= [
         path: "/contact-page",
         label:"Contact"
     },
-]
+])

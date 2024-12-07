@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {NavbarList} from "@/components/ui/navbarList";
-import {DarkModeToggle} from "@/components/DarkmodeToggle";
+import NavbarList from "@/components/ui/navbarList";
+import DarkModeToggle from "@/components/DarkmodeToggle";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);

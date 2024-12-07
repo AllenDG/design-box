@@ -1,36 +1,43 @@
-import { navBarRoutes } from "@/routes/navbarRoutes";
-import { useLocation, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const NavbarList = () => {
-  const location = useLocation();
+// Define routes inline
+export const navBarRoutes = [
+  {
+    path: "/",
+    label: "Home",
+  },
+  {
+    path: "/showcase-page",
+    label: "Showcase",
+  },
+  {
+    path: "/services-page",
+    label: "Services",
+  },
+  {
+    path: "/contact-page",
+    label: "Contact",
+  },
+];
 
+export default function NavbarList() {
   return (
-    <ul className="flex justify-center space-x-6">
-      {navBarRoutes.map((route) => {
-        const isActive = location.pathname === route.path;
-        return (
-          <li key={route.path} className="group">
-            {/* Use Link for internal navigation */}
-            <Link
-              to={route.path}
-              className={`relative rounded px-4 py-2 text-sm font-medium transition duration-300 ${
-                isActive ? "text-secondary-400" : "text-secondary-800"
-              } hover:text-secondary-300`}
-            >
-              {route.label}
-              <span
-                className={`absolute bottom-0 left-0 h-[2px] transition-all duration-300 ${
-                  isActive
-                    ? "bg-secondary-400 w-full"
-                    : "bg-secondary-400 w-0 group-hover:w-full"
-                }`}
-              />
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <div className="flex items-center space-x-8">
+      {navBarRoutes.map((route) => (
+        <NavLink
+          key={route.path}
+          to={route.path}
+          className={({ isActive }) =>
+            `transform text-gray-900 transition duration-200 hover:scale-110 hover:text-gray-600 dark:text-white dark:hover:text-gray-300 ${
+              isActive
+                ? "border-b-2 border-gray-400 font-semibold text-gray-400"
+                : ""
+            }`
+          }
+        >
+          {route.label}
+        </NavLink>
+      ))}
+    </div>
   );
-};
-
-export default NavbarList;
+}

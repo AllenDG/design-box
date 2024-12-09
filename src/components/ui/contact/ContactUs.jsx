@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {/* Email Card */}
-      <div className="rounded-lg border border-secondary-200  p-6 shadow-lg transition duration-300 hover:shadow-xl">
+      <div className="rounded-lg border border-secondary-200 p-6 shadow-lg transition duration-300 hover:shadow-xl">
         <h2 className="mb-4 text-center text-xl font-semibold">
           Send an Email
         </h2>
@@ -22,7 +22,7 @@ const ContactUs = () => {
       </div>
 
       {/* Instagram Card */}
-      <div className="rounded-lg border border-secondary-200  p-6 shadow-lg transition duration-300 hover:shadow-xl">
+      <div className="rounded-lg border border-secondary-200 p-6 shadow-lg transition duration-300 hover:shadow-xl">
         <h2 className="mb-4 text-center text-xl font-semibold">Instagram</h2>
         <p className="mb-4 text-center">Follow me on Instagram:</p>
         <div className="text-center">
@@ -36,12 +36,12 @@ const ContactUs = () => {
       </div>
 
       {/* TikTok Card */}
-      <div className="rounded-lg border border-secondary-200  p-6 shadow-lg transition duration-300 hover:shadow-xl">
+      <div className="rounded-lg border border-secondary-200 p-6 shadow-lg transition duration-300 hover:shadow-xl">
         <h2 className="mb-4 text-center text-xl font-semibold">TikTok</h2>
         <p className="mb-4 text-center">Follow me on TikTok:</p>
         <div className="text-center">
           <a
-            href="https://www.tiktok.com/@pcommissioner_"
+            href="https://www.tiktok.com/@pickaro"
             className="inline-flex items-center text-blue-600 hover:underline"
           >
             <FaTiktok className="mr-2" /> @pickaro_

@@ -26,7 +26,7 @@ const VideoEditing = () => {
                 src={project.videoUrl}
                 title={project.title}
                 className="h-full w-full rounded-lg"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
               <button

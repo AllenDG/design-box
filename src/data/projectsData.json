@@ -1,41 +1,70 @@
 {
   "graphicDesign": [
-    { "title": "Logo Design", "imageUrl": "https://via.placeholder.com/400" },
-    { "title": "Poster Design", "imageUrl": "https://via.placeholder.com/400" },
-    { "title": "Branding", "imageUrl": "https://via.placeholder.com/400" },
-    { "title": "Web Design", "imageUrl": "https://via.placeholder.com/400" },
-    { "title": "Flyer Design", "imageUrl": "https://via.placeholder.com/400" },
-    { "title": "Business Card", "imageUrl": "https://via.placeholder.com/400" }
+    {
+      "title": "Brochure",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Brochure.png?alt=media&token=8a0bc282-e3d3-4b85-bb5c-eb600d8753730"
+    },
+    {
+      "title": "Poster Brochure",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Brochure1.png?alt=media&token=faf61a67-cba7-49d0-a677-58a531d95d03"
+    },
+    {
+      "title": "Brochure",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Brochure2.png?alt=media&token=682b9238-2678-4313-95e7-d20ecb3ff20e"
+    },
+    {
+      "title": "Infographics",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/FakeNews.jpg?alt=media&token=4eb174ff-6d16-490e-9a83-fbf4efc365ef"
+    },
+    {
+      "title": "Menu",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/menu.jpg?alt=media&token=6a9a9a91-f822-4348-b2b3-73a98cd10716"
+    },
+    {
+      "title": "Menu",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Bracket%20Cafe.png?alt=media&token=27b9133a-6a41-465d-a85d-fd89f1ca361d"
+    },
+    {
+      "title": "Web Design",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Frame%201.png?alt=media&token=cb4e5076-7437-4d5b-82ba-f7df03e3fd13"
+    }
   ],
   "videoEditing": [
     {
-      "title": "Corporate Video",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Advertisement Video",
+      "videoUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/PerfumeAds.mp4?alt=media&token=558df857-1165-4f19-b2f4-748e2823a871"
     },
     {
-      "title": "Vlog Editing",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "Advertisement Video",
+      "videoUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/BearBrandAds.mp4?alt=media&token=4b308474-0828-4b22-8c73-29128946d953"
     },
     {
-      "title": "Tutorial Video",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      "title": "School Advertisement Video",
+      "videoUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/schoolAdsFinal.mp4?alt=media&token=15120cac-a98e-4d56-a90c-415cef7409ad"
+    },
+    {
+      "title": "Slide Story Video",
+      "videoUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/SlideStory.mp4?alt=media&token=e3ac8672-16ab-4622-b793-e457d545ebca"
     }
   ],
   "web": [
     {
-      "title": "Portfolio Website",
-      "description": "A personal portfolio website",
-      "imageUrl": "https://via.placeholder.com/400"
+      "title": "Dormitory (New Venture Project)",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/dormitory.png?alt=media&token=26c34e35-39e3-45cb-9530-e99cc750e896",
+      "githubUrl": "https://github.com/AllenDG/Web-Dormitory",
+      "vercelUrl": "https://web-dormitory.vercel.app/"
     },
     {
-      "title": "E-commerce Site",
-      "description": "A full-featured online store",
-      "imageUrl": "https://via.placeholder.com/400"
+      "title": "Photo Studio",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/photoStudio.png?alt=media&token=fef97599-8ed5-4814-9317-e57dcb74d30f",
+      "githubUrl": "https://github.com/AllenDG/Photo-Studio",
+      "vercelUrl": "https://photostudio-website.netlify.app/"
     },
     {
-      "title": "Blog Website",
-      "description": "A simple blog layout",
-      "imageUrl": "https://via.placeholder.com/400"
+      "title": "Food Web",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/foodWeb.png?alt=media&token=ff4603d5-6b56-4e46-acd4-2c275905d6e7",
+      "githubUrl": "https://github.com/AllenDG",
+      "vercelUrl": "https://foodw.netlify.app/#"
     }
   ]
 }

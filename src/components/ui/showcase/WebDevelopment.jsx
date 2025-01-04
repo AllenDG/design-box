@@ -1,14 +1,19 @@
 import { FaGithub } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
+import { motion } from "framer-motion"; // Import Framer Motion
 import data from "@/data/projectsData";
 
 const WebDevelopment = () => {
   return (
     <div className="mx-auto grid max-w-6xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-3">
       {data.web.map((project, index) => (
-        <div
+        <motion.div
           key={index}
           className="overflow-hidden rounded-lg border border-black transition-shadow hover:shadow-xl dark:border-white"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
         >
           {/* Project Image */}
           <img
@@ -49,7 +54,7 @@ const WebDevelopment = () => {
               )}
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
